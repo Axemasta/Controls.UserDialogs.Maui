@@ -11,8 +11,10 @@ namespace Sample
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
-                .UseUserDialogs(true, () =>
+                .UseUserDialogs(() =>
                 {
+                    //UserDialogsConfig.ImplementationType = typeof(YourCustomDialogImplementation);
+
 #if ANDROID
                     var fontFamily = "OpenSans-Default.ttf";
 #else

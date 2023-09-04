@@ -3,6 +3,7 @@
 public class UserDialogs
 {
     static IUserDialogs _currentInstance;
+
     public static IUserDialogs Instance
     {
         get
@@ -12,6 +13,6 @@ public class UserDialogs
 
             return _currentInstance;
         }
-        set => _currentInstance = value;
+        internal set => _currentInstance = value;
     }
 }
